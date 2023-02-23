@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development settings
+my_project_env
+.venv
+.env
+.env.*
+.envrc
+*.sqlite3
+*.db
+*.log
+media/
+static/
+
+# Third-party libraries installed via pip
+# Python packaging tool
+# https://pip.pypa.io/en/stable/user_guide/#requirements-files
+requirements/
+requirements/*.txt
+
+# Virtual environment
+# https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment
+venv/
+env/
+
+# Other generated files
+*.swp
+*.swo
+*~
+
+# Editors
+.vscode/
+.idea/
+*.sublime-workspace
