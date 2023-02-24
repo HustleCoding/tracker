@@ -12,3 +12,22 @@ class Course(models.Model):
 
     def __str__(self):
         return self.title
+
+class Section(models.Model):
+    STATUS_CHOICES = [
+        ('inactive', 'Inactive'),
+        ('started', 'Started'),
+        ('completed', 'Completed'),
+    ]
+
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    created = models.DateTimeField(auto_now_add=True)
+    estimated_completion_time = models.PositiveIntegerField()
+    start_date = models.DateTimeField(null=True, blank=True)
+    completed_date = models.DateTimeField(null=True, blank=True)
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='inactive')
+    estimated_difficulty = models.PositiveIntegerField(null=True, blank=True)
+
+
