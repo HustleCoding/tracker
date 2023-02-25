@@ -1,3 +1,3 @@
 export default function LoginPage() {
-  return <div>Login Page</div>;
+  return <div className="justify-center flex text-4xl mt-8">Login Page</div>;
 }

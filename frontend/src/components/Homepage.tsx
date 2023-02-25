@@ -1,11 +1,9 @@
 const Homepage = () => {
   return (
     <div>
-      <img
-        className="w-full h-auto"
-        src="/course-1331.png"
-        alt="course-image"
-      />
+      <h1 className="justify-center flex text-4xl mt-8">
+        This is a course tracker app
+      </h1>
     </div>
   );
 };

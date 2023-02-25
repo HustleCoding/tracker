@@ -25,8 +25,7 @@ const Courses = () => {
   }, []);
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Course Tracker</h1>
+    <div className="justify-center flex text-4xl mt-8">
       <p>{courseData.length} courses found.</p>
       <ul>
         {courseData.map((course) => (

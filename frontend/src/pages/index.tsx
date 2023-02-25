@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Navbar from "@/components/Navbar";
 import Homepage from "@/components/Homepage";
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
         <link rel="icon" href="/next.svg" />
       </Head>
       <body>
-        <Navbar />
         <Homepage />
       </body>
     </>
