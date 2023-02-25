@@ -1,5 +1,3 @@
-"use client";
-
 import { useState, useEffect } from "react";
 
 interface Data {
@@ -13,7 +11,7 @@ interface Data {
   user_rating: number;
 }
 
-const Main = () => {
+const Courses = () => {
   const [courseData, setCourseData] = useState<Data[]>([]);
 
   useEffect(() => {
@@ -39,4 +37,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Courses;
