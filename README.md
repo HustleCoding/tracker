@@ -2,7 +2,7 @@
 
 This is a web application that allows users to track their progress in a course. 
 
-The app is built using Python, Django REST Framework, React, TailwindCSS, and is designed to be simple and user-friendly.
+The app is built using Python, Django REST Framework, Next.js, TailwindCSS, and is designed to be simple and user-friendly.
 
 # Features
 The Course Progress Tracker Web App has the following features:
