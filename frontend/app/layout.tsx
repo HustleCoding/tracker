@@ -1,7 +1,6 @@
 "use client";
 
 import "./globals.css";
-
 import Navbar from "./components/Navbar";
 
 export default function RootLayout({
@@ -16,7 +15,7 @@ export default function RootLayout({
         <meta name="description" content="Tracker App" />
         <link rel="icon" href="/next.svg" />
       </head>
-      <body id="__next">
+      <body className="font-sans" id="__next">
         <Navbar />
         {children}
       </body>

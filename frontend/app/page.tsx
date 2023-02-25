@@ -1,18 +1,9 @@
 "use client";
 
-import { Grid } from "@mui/material";
-
 export default function Home() {
   return (
-    <Grid
-      className="bg-eggShell"
-      container
-      height="100vh"
-      alignItems="center"
-      justifyContent="center"
-      direction="column"
-    >
-      <h1>Heeeeelllo!</h1>
-    </Grid>
+    <div>
+      <img className="w-full h-auto" src="/course-1331.png" alt="Course" />
+    </div>
   );
 }
