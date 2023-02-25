@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 
 interface Data {
@@ -25,8 +27,8 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="header">
-      <h1>Course Tracker</h1>
+    <div>
+      <h1 className="text-3xl font-bold underline">Course Tracker</h1>
       <p>{courseData.length} courses found.</p>
       <ul>
         {courseData.map((course) => (
