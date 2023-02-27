@@ -1,21 +1,26 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="flex justify-center mt-8">
-      <a className="m-2 font-sans text-2xl font-bold hover:underline" href="/">
+      <Link
+        className="m-2 font-sans text-2xl font-bold hover:underline"
+        href="/"
+      >
         <span>Home</span>
-      </a>
-      <a
+      </Link>
+      <Link
         className="m-2 font-sans text-2xl font-bold hover:underline"
         href="/courses"
       >
         <span>Courses</span>
-      </a>
-      <a
+      </Link>
+      <Link
         className="m-2 font-sans text-2xl font-bold hover:underline"
         href="/login"
       >
         <span>Login</span>
-      </a>
+      </Link>
     </nav>
   );
 }

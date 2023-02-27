@@ -1,15 +1,5 @@
+import Data from "@/typings/data";
 import { useState, useEffect } from "react";
-
-interface Data {
-  title: string;
-  url: string;
-  description: string;
-  instructors: string;
-  created: number;
-  duration: number;
-  existing_rating: number;
-  user_rating: number;
-}
 
 const Courses = () => {
   const [courseData, setCourseData] = useState<Data[]>([]);
@@ -25,8 +15,7 @@ const Courses = () => {
   }, []);
 
   return (
-    <div className="justify-center flex text-4xl mt-8">
-      <p>{courseData.length} courses found.</p>
+    <div className="justify-center flex text-4xl mt-8 flex-col">
       <ul>
         {courseData.map((course) => (
           <li key={course.title}>{course.title}</li>
